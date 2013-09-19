@@ -14,7 +14,10 @@ public class cameraControl : MonoBehaviour {
 			var ball = GameObject.Find("test");
 			if (ball != null) {
 				Debug.Log("activated");
-				ball.animation.Play("Bounce");
+				var anim = ball.animator;
+				if (anim != null) {
+					Debug.Log("accessed");
+				}
 			}
 		}
 	}
