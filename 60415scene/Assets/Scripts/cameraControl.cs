@@ -10,9 +10,11 @@ public class cameraControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButton("Jump")) {
-			
-
+		if (Input.GetButtonDown("Jump")) {
+			var ball = GameObject.Find("test");
+			if (ball != null) {
+				Debug.Log("activated");
+			}
 		}
 	}
 }
