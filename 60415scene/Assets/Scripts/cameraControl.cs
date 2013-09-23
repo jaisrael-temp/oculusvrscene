@@ -16,6 +16,11 @@ public class cameraControl : MonoBehaviour {
 				Debug.Log("activated");
 			}
 		}
+
+		//var maxVelocity = 0.5f;
+		//var acceleration = 0.1f;
+
+
 		var valueH = Input.GetAxis ("Horizontal");
 		var valueV = Input.GetAxis ("Vertical");
 		this.transform.Translate(0.1f*valueH,0.0f,0.1f*valueV);
