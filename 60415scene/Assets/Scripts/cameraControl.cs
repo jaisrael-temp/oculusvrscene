@@ -14,11 +14,11 @@ public class cameraControl : MonoBehaviour {
 			var ball = GameObject.Find("test");
 			if (ball != null) {
 				Debug.Log("activated");
-				var anim = ball.animator;
-				if (anim != null) {
-					Debug.Log("accessed");
-				}
 			}
 		}
+		var valueH = Input.GetAxis ("Horizontal");
+		var valueV = Input.GetAxis ("Vertical");
+		this.transform.Translate(0.1f*valueH,0.0f,0.1f*valueV);
+
 	}
 }
