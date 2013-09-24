@@ -4,8 +4,9 @@ using System.Collections;
 public class cameraControl : MonoBehaviour {
 
 	// Use this for initialization
+	Vector3 previousMousePos;
 	void Start () {
-	
+		previousMousePos = Input.mousePosition;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +24,12 @@ public class cameraControl : MonoBehaviour {
 
 		var valueH = Input.GetAxis ("Horizontal");
 		var valueV = Input.GetAxis ("Vertical");
-		this.transform.Translate(0.1f*valueH,0.0f,0.1f*valueV);
+		this.transform.Translate (0.5f*valueH, 0.0f, 0.5f*valueV);
 
+		var mousePos = Input.mousePosition;
+		var mouseDelta = Input.mousePosition - previousMousePos;
+		previousMousePos = mousePos;
+		this.transform.Rotate (mouseDelta.y*0.1f, -mouseDelta.x*0.1f, 0.0f - this.transform.rotation.z);
+		//Debug.Log(this.transform.up);
 	}
 }
