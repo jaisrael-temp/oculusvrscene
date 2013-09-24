@@ -17,6 +17,8 @@ using System.Collections;
 //[AddComponentMenu("Camera-Control/Mouse Look")]
 public class cameraControl : MonoBehaviour {
 
+	public AnimationClip jumpAnimation;
+
 	public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
 	public RotationAxes axes = RotationAxes.MouseXAndY;
 	public float sensitivityX = 15F;
@@ -68,9 +70,7 @@ public class cameraControl : MonoBehaviour {
 
 		if (Input.GetButtonDown("Jump")) {
 			var ball = GameObject.Find("test");
-			if (ball != null) {
-				Debug.Log("activated");
-			}
+			ball.animation.Play("Take 001");
 		}
 
 //var maxVelocity = 0.5f;
