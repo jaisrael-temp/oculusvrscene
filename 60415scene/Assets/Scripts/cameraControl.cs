@@ -14,7 +14,7 @@ using System.Collections;
 /// - Create a camera. Make the camera a child of the capsule. Reset it's transform.
 /// - Add a MouseLook script to the camera.
 ///   -> Set the mouse look to use LookY. (You want the camera to tilt up and down like a head. The character already turns.)
-//[AddComponentMenu("Camera-Control/Mouse Look")]
+[AddComponentMenu("cameraControl/Mouse Look")]
 public class cameraControl : MonoBehaviour {
 
 	public AnimationClip jumpAnimation;
@@ -72,14 +72,6 @@ public class cameraControl : MonoBehaviour {
 			var ball = GameObject.Find("test");
 			ball.animation.Play("Take 001");
 		}
-
-//var maxVelocity = 0.5f;
-			//var acceleration = 0.1f;
-	
-
-		var valueH = Input.GetAxis ("Horizontal");
-		var valueV = Input.GetAxis ("Vertical");
-		this.transform.Translate (0.5f*valueH, 0.0f, 0.5f*valueV);
 
 	}
 	
