@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\cameraControl.cs" />
+     <Compile Include="Assets\Scripts\platform movement\simpleRepeatedLinear.cs" />
      <None Include="Assets\Models\toon2.shader" />
      <None Include="Assets\Models\toon.shader" />
   </ItemGroup>

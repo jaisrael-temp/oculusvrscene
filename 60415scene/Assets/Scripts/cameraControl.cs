@@ -68,11 +68,6 @@ public class cameraControl : MonoBehaviour {
 			transform.localRotation = originalRotation * yQuaternion;
 		}
 
-		if (Input.GetButtonDown("Jump")) {
-			var ball = GameObject.Find("test");
-			ball.animation.Play("Take 001");
-		}
-
 	}
 	
 	void Start ()
