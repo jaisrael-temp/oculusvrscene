@@ -19,6 +19,12 @@ function FixedUpdate() {
 
 	// Apply gravity
 	moveDirection.y -= gravity * Time.deltaTime;
+
+	// Zero out movement
+	if (moveDirection.Magnitude <= speed/4.0) {
+		moveDirection = Vector3.zero;
+	}
+	Debug.Log(moveDirection);
 	
 	// Move the controller
 	var controller : CharacterController = GetComponent(CharacterController);
