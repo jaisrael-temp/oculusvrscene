@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class generalLooping : MonoBehaviour {
+public class generalLooping : platform {
 
 	public Vector3[] displacements;
 	public int[] timings;
@@ -14,24 +14,27 @@ public class generalLooping : MonoBehaviour {
 		position = transform.position;
 		frame = 0;
 		index = 0;
+		gameObject.tag = "platform";
 	}
 	
 	void FixedUpdate () {
-		int period = timings[index];
+		if(movementEnabled) {
+			int period = timings[index];
 
 
-		float progress = ((float)frame%period)/((float)period);
-		if (frame/period > 0) {
-			frame -= period;
-			position = position + displacements[index];
-			index++;
-			if (index == displacements.Length) index -= displacements.Length;
+			float progress = ((float)frame%period)/((float)period);
+			if (frame/period > 0) {
+				frame -= period;
+				position = position + displacements[index];
+				index++;
+				if (index == displacements.Length) index -= displacements.Length;
+			}
+
+			//simple linear interpolation
+			Vector3 newPosition = ((1 - progress) * position) + (progress * (position + displacements[index]));
+
+			transform.Translate(newPosition - transform.position);
+			frame++;
 		}
-
-		//simple linear interpolation
-		Vector3 newPosition = ((1 - progress) * position) + (progress * (position + displacements[index]));
-
-		transform.Translate(newPosition - transform.position);
-		frame++;
 	}
 }
