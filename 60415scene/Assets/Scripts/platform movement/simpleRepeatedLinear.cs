@@ -16,7 +16,7 @@ public class simpleRepeatedLinear : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		float progress = ((float)frame%period)/((float)period);
 		progress = (frame/period)%2 == 0 ? progress : 1.0f - progress;
 

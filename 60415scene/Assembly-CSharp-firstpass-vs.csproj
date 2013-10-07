@@ -44,20 +44,9 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Pro Standard Assets\Image Based\ImageEffectBase.cs" />
-     <Compile Include="Assets\Pro Standard Assets\Image Based\ImageEffects.cs" />
-     <Compile Include="Assets\Standard Assets\Camera Scripts\MouseLook.cs" />
-     <None Include="Assets\Glowing Things\FunkyThingsComposite.shader" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <None Include="Assets\Models\toon2.shader" />
      <None Include="Assets\Models\toon.shader" />
-     <None Include="Assets\Edge Detection\EdgeDetectNormals.shader" />
-     <None Include="Assets\Glowing Things\FunkyVertexLit.shader" />
-     <None Include="Assets\Show UV Mapping\ShowUVMapping.shader" />
-     <None Include="Assets\Show RenderTypes\ShowRenderTypes.shader" />
-     <None Include="Assets\Show Overdraw\RenderOverdrawZ.shader" />
-     <None Include="Assets\Glowing Things\RenderFunkyThings.shader" />
-     <None Include="Assets\Common Assets\RenderDepth.shader" />
-     <None Include="Assets\Show Overdraw\RenderOverdraw.shader" />
-     <None Include="Assets\Common Assets\RenderNormalsAndDepth.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
