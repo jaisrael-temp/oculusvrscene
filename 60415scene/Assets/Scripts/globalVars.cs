@@ -3,7 +3,6 @@ using System.Collections;
 
 public class globalVars : MonoBehaviour {
 
-	public bool enabled = false;
 
 	// Use this for initialization
 	void Start () {
