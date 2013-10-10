@@ -13,12 +13,7 @@ public class enablePlatform : MonoBehaviour {
 	
 	}
 	void OnTriggerEnter( Collider other) {
-		Debug.Log(other.gameObject.name);
-		if (other.gameObject.name == "First Person Controller") {
-			if (other.gameObject.GetComponent("globalVars") != null) {
-				(other.gameObject.GetComponent("globalVars") as globalVars).enabled = true;
-			}
-		}
+		
 		foreach (var plat in GameObject.FindGameObjectsWithTag("platform")) {
 			var p = plat.GetComponent("simpleRepeatedLinear") ?? plat.GetComponent("generalLooping");
 			(p as platform).movementEnabled = true;
