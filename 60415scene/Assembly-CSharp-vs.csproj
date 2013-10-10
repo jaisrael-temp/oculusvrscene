@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\NonKinematicWalker.cs" />
+     <Compile Include="Assets\Scripts\bridgeSpawn.cs" />
      <Compile Include="Assets\Scripts\cameraControl.cs" />
      <Compile Include="Assets\Scripts\death.cs" />
      <Compile Include="Assets\Scripts\enablePlatform.cs" />
