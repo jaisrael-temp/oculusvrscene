@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\FPSWalker.js" />
      <None Include="Assets\Models\toon2.shader" />
+     <None Include="Assets\Scripts\brighten.shader" />
      <None Include="Assets\Models\toon.shader" />
  <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
