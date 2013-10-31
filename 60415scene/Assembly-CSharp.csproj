@@ -46,6 +46,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\NonKinematicWalker.cs" />
      <Compile Include="Assets\Scripts\bridgeSpawn.cs" />
+     <Compile Include="Assets\Scripts\brighten.cs" />
      <Compile Include="Assets\Scripts\cameraControl.cs" />
      <Compile Include="Assets\Scripts\death.cs" />
      <Compile Include="Assets\Scripts\enablePlatform.cs" />
@@ -53,7 +54,9 @@
      <Compile Include="Assets\Scripts\platform movement\generalLooping.cs" />
      <Compile Include="Assets\Scripts\platform movement\platform.cs" />
      <Compile Include="Assets\Scripts\platform movement\simpleRepeatedLinear.cs" />
+     <Compile Include="Assets\Scripts\textureChange.cs" />
      <None Include="Assets\Models\toon2.shader" />
+     <None Include="Assets\Scripts\brighten.shader" />
      <None Include="Assets\Models\toon.shader" />
   </ItemGroup>
   <ItemGroup>
