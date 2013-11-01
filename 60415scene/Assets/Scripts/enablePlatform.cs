@@ -3,6 +3,9 @@ using System.Collections;
 
 public class enablePlatform : MonoBehaviour {
 
+	//var cutsceneDelay = 2;
+	//var nextUsage;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,16 +15,12 @@ public class enablePlatform : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnTriggerEnter( Collider other) {
-		Debug.Log(other.gameObject.name);
-		if (other.gameObject.name == "First Person Controller") {
-			if (other.gameObject.GetComponent("globalVars") != null) {
-				(other.gameObject.GetComponent("globalVars") as globalVars).enabled = true;
-			}
-		}
+	void OnTriggerEnter (Collider other) {
 		foreach (var plat in GameObject.FindGameObjectsWithTag("platform")) {
 			var p = plat.GetComponent("simpleRepeatedLinear") ?? plat.GetComponent("generalLooping");
 			(p as platform).movementEnabled = true;
 		}
+		GameObject.Find("Main Camera").camera.active = false;
+		GameObject.Find("PlatfromEnabledCamera").camera.active = true;
 	}
 }

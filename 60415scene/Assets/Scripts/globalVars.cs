@@ -11,6 +11,9 @@ public class globalVars : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			Debug.Log("quitting");
+			Application.Quit();
+		}
 	}
 }
