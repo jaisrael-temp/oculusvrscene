@@ -327,6 +327,11 @@ function FixedUpdate () {
 	// 	}
 	// }
 	
+	if(Input.GetKey(KeyCode.Escape)) {
+		Application.Quit();
+	}
+
+	
 	if (useFixedUpdate)
 		UpdateFunction();
 }
@@ -350,6 +355,11 @@ function Update () {
 			movingPlatform.platformVelocity = Vector3.zero;	
 		}
 	}
+
+	if(Input.GetKey(KeyCode.Escape)) {
+		Application.Quit();
+	}
+
 	if (!useFixedUpdate)
 		UpdateFunction();
 }
