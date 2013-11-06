@@ -9,6 +9,8 @@ Project("{71A75494-F554-BA90-57EB-9941D86A3117}") = "60415scene", "Assembly-Unit
 EndProject
 Project("{71A75494-F554-BA90-57EB-9941D86A3117}") = "60415scene", "Assembly-UnityScript.unityproj", "{892D118B-C8D0-A399-E5E2-A6A0810C3249}"
 EndProject
+Project("{71A75494-F554-BA90-57EB-9941D86A3117}") = "60415scene", "Assembly-UnityScript-Editor.unityproj", "{93B3D252-0174-1595-35EE-3196E6FDF597}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +33,15 @@ Global
 		{892D118B-C8D0-A399-E5E2-A6A0810C3249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892D118B-C8D0-A399-E5E2-A6A0810C3249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892D118B-C8D0-A399-E5E2-A6A0810C3249}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93B3D252-0174-1595-35EE-3196E6FDF597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93B3D252-0174-1595-35EE-3196E6FDF597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93B3D252-0174-1595-35EE-3196E6FDF597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93B3D252-0174-1595-35EE-3196E6FDF597}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																												GlobalSection(MonoDevelopProperties) = preSolution
+																																																						GlobalSection(MonoDevelopProperties) = preSolution
 																																																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
