@@ -51,10 +51,12 @@
      <Compile Include="Assets\Scripts\death.cs" />
      <Compile Include="Assets\Scripts\enablePlatform.cs" />
      <Compile Include="Assets\Scripts\globalVars.cs" />
-     <Compile Include="Assets\Scripts\platform movement\generalLooping.cs" />
-     <Compile Include="Assets\Scripts\platform movement\platform.cs" />
-     <Compile Include="Assets\Scripts\platform movement\simpleRepeatedLinear.cs" />
+     <Compile Include="Assets\Scripts\platform behavior\generalLooping.cs" />
+     <Compile Include="Assets\Scripts\platform behavior\platform.cs" />
+     <Compile Include="Assets\Scripts\platform behavior\simpleRepeatedLinear.cs" />
      <Compile Include="Assets\Scripts\textureChange.cs" />
+     <Compile Include="Assets\Scripts\triggerHandler.cs" />
+     <Compile Include="Assets\Scripts\triggerPlane.cs" />
      <None Include="Assets\Models\toon2.shader" />
      <None Include="Assets\Scripts\brighten.shader" />
      <None Include="Assets\Models\toon.shader" />
