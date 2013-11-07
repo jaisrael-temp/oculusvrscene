@@ -3,6 +3,8 @@ using System.Collections;
 
 public class triggerPlane : MonoBehaviour {
 
+	public int trigger;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -15,6 +17,6 @@ public class triggerPlane : MonoBehaviour {
 
 	void OnTriggerEnter (Collider c) {
 		var handler = (GameObject.Find("First Person Controller").GetComponent("triggerHandler") as triggerHandler);
-		handler.handleTrigger(triggerHandler.Triggers.firstGap);
+		handler.handleTrigger(trigger);
 	}
 }
