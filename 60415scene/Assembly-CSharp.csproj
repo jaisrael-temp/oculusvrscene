@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\cameraControl.cs" />
      <Compile Include="Assets\Scripts\death.cs" />
      <Compile Include="Assets\Scripts\enablePlatform.cs" />
+     <Compile Include="Assets\Scripts\fluctuate.cs" />
      <Compile Include="Assets\Scripts\globalVars.cs" />
      <Compile Include="Assets\Scripts\platform behavior\generalLooping.cs" />
      <Compile Include="Assets\Scripts\platform behavior\platform.cs" />
